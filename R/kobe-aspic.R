@@ -61,7 +61,7 @@ aspicBio=function(file){
     rtn=rbind(rtn,cbind(run=iFile,res))
     }
 
-  return(rtn[do.call("order",rtn[,c("run","iter","year")]),c("run","iter","year","stock","harvest","bmsy","fmsy")])}
+  return(rtn[do.call("order",rtn[,c("run","iter","year")]),c("iter","year","stock","harvest","bmsy","fmsy")])}
 
 #### reads ASPIC projection file
 aspicPrb=function(file){
